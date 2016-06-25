@@ -1,0 +1,36 @@
+{
+  "name": "vawn-stack-demo",
+  "description": "VAWN (Vis.js <-> Angular <-> Web API <-> Neo4j) Stack demo application",
+  "authors": [
+    "Christopher Redwine"
+  ],
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://chrisredwine.github.io/VAWN/",
+  "devDependencies": {
+    "angular-mocks": "1.5.x"
+  },
+  "dependencies": {
+    "angular": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "1.5.x",
+    "angular-sanitize": "1.5.x",
+    "bootstrap": "3.1.x",
+    "extras.angular.plus": "0.9.x",
+    "font-awesome": "4.0.x",
+    "jquery": "2.2.x",
+    "moment": "2.6.x",
+    "toastr": "2.0.x"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular": "^1.2.25"
+  }
+}
