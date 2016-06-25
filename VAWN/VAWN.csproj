@@ -177,6 +177,7 @@
     <Content Include="bin\VAWN.pdb" />
     <Content Include="bin\WebGrease.dll" />
     <Content Include="Global.asax" />
+    <Content Include="karma.conf.js" />
     <Content Include="packages.config" />
     <Content Include="e2e-tests\README.md" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
@@ -201,6 +202,10 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="bin\VAWN.dll.config" />
     <Content Include="Models\README.md" />
+    <Content Include=".bowerrc" />
+    <Content Include=".jshintrc" />
+    <Content Include="bower.json" />
+    <Content Include="package.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
