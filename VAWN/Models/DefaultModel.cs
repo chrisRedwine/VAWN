@@ -9,12 +9,36 @@ namespace VAWN.Models
     {
         #region Instance Properties
         /// <summary>
-        /// 
+        /// UserName
         /// </summary>
-        [JsonProperty("DefaultId")]
-        [XmlElement(ElementName = "DefaultId")]
+        [JsonProperty("UserName")]
+        [XmlElement(ElementName = "UserName")]
         [Required]
-        public System.Int32 DefaultId { get; set; }
+        public string UserName { get; set; }
+
+        /// <summary>
+        /// UserDomainName
+        /// </summary>
+        [JsonProperty("UserDomainName")]
+        [XmlElement(ElementName = "UserDomainName")]
+        [Required]
+        public string UserDomainName { get; set; }
+
+        /// <summary>
+        /// MachineName
+        /// </summary>
+        [JsonProperty("MachineName")]
+        [XmlElement(ElementName = "MachineName")]
+        [Required]
+        public string MachineName { get; set; }
+
+        /// <summary>
+        /// OSVersionString
+        /// </summary>
+        [JsonProperty("OSVersionString")]
+        [XmlElement(ElementName = "OSVersionString")]
+        [Required]
+        public string OSVersionString { get; set; }
         #endregion
     }
 }
