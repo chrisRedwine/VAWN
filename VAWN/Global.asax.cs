@@ -31,7 +31,6 @@ namespace VAWN
         protected void configureRest()
         {
             AreaRegistration.RegisterAllAreas();
-            //GlobalConfiguration.Configure(x => x.MapHttpAttributeRoutes());
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
