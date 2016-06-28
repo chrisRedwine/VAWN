@@ -145,6 +145,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\app.config.js" />
+    <Content Include="app\app.html" />
+    <Content Include="app\assets\images\blank.png" />
+    <Content Include="app\assets\scripts\wait.js" />
+    <Content Include="app\assets\styles\app.css" />
+    <Content Include="app\assets\styles\bootswatch.paper.min.css" />
+    <Content Include="app\home\home.component.js" />
+    <Content Include="app\home\home.html" />
+    <Content Include="app\movies\movies.component.js" />
+    <Content Include="app\navigation\navigation.component.js" />
+    <Content Include="app\navigation\navigation.html" />
+    <Content Include="app\movies\movies.html" />
     <Content Include="App_data\XmlDocument.xml" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="bin\Antlr3.Runtime.dll" />
@@ -206,6 +218,7 @@
     <Content Include=".jshintrc" />
     <Content Include="bower.json" />
     <Content Include="package.json" />
+    <Content Include="app\services\mock\relationship_types.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -216,7 +229,7 @@
   <ItemGroup>
     <Content Include="app\app.module.js" />
     <Content Include="app\assets\images\network.png" />
-    <Content Include="app\assets\styles\styles.css" />
+    <Content Include="app\assets\styles\ngplus.css" />
     <Content Include="index.html" />
     <Content Include="e2e-tests\protractor.conf.js" />
     <Content Include="e2e-tests\scenarios.js" />
@@ -266,9 +279,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\core\" />
-    <Folder Include="app\services\" />
-    <Folder Include="app\view1\" />
-    <Folder Include="app\view2\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
