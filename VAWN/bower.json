@@ -12,16 +12,19 @@
   },
   "dependencies": {
     "angular": "1.5.x",
+    "angular-route": "1.5.x",
     "angular-animate": "1.5.x",
     "angular-resource": "1.5.x",
-    "angular-route": "1.5.x",
     "angular-sanitize": "1.5.x",
     "bootstrap": "3.1.x",
     "extras.angular.plus": "0.9.x",
     "font-awesome": "4.0.x",
     "jquery": "2.2.x",
     "moment": "2.6.x",
-    "toastr": "2.0.x"
+    "toastr": "2.0.x",
+    "ng-tags-input": "^3.1.1",
+    "please-wait": "^0.0.5",
+    "SpinKit": "spinkit#^1.2.5"
   },
   "ignore": [
     "**/.*",

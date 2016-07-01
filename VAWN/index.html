@@ -1,49 +1,63 @@
 ﻿<!DOCTYPE html>
-<html lang="en" ng-app="vawn">
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/png" href="/app/assets/images/network.png" />
+        <link type="image/png" rel="icon" href="/app/assets/images/network.png" />
         <title>VAWN Stack Demo App</title>
 
         <!--Vendor CSS-->
-        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="/bower_components/toastr/toastr.min.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="/bower_components/please-wait/build/please-wait.css" />
+        <link type="text/css" rel="stylesheet" href="/bower_components/SpinKit/css/spinners/9-cube-grid.css" />
+        <link type="text/css" rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="/bower_components/toastr/toastr.min.css" />
+        <link type="text/css" rel="stylesheet" href="/bower_components/ng-tags-input/ng-tags-input.min.css" >
 
         <!--Custom CSS-->
-        <link href="/app/assets/styles/styles.css" rel="stylesheet" />
+        <link type="text/css" rel="stylesheet" href="/app/assets/styles/bootswatch.paper.min.css" />
+        <link type="text/css" rel="stylesheet" href="/app/assets/styles/app.css" />
+        <link type="text/css" rel="stylesheet" href="/app/assets/styles/ngplus.css" />
     </head>
-    <body>
-        <div>
-            <label>Name:</label>
-            <input type="text" ng-model="yourName" placeholder="Enter a name here">
-            <hr>
-            <h1>Hello {{yourName}}!</h1>
-        </div>
+    <body ng-app="vawn">
+        <vawn>Loading VAWN Demo Application...</vawn>
+
+        <!--Loading Page-->
+        <script type="text/javascript" src="/bower_components/please-wait/build/please-wait.min.js"></script>
+        <script type="text/javascript" src="app/assets/scripts/wait.js"></script>
+
+        <!-- IE required polyfills, in this exact order -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.33.3/es6-shim.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.20/system-polyfills.js"></script>
+        <script type="text/javascript" src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
 
         <!--Vendor JS-->
         <!--In production, use:
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.min.js"></script>
         etc.-->
-        <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-        <script src="/bower_components/angular/angular.js"></script>
-        <script src="/bower_components/angular-animate/angular-animate.js"></script>
-        <script src="/bower_components/angular-resource/angular-resource.js"></script>
-        <script src="/bower_components/angular-route/angular-route.js"></script>
-        <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
-        <script src="/bower_components/moment/moment.js"></script>
-        <script src="/bower_components/toastr/toastr.js"></script>
+        <script type="text/javascript" src="/bower_components/jquery/dist/jquery.js"></script>
+        <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="/node_modules/@angular/router/angular1/angular_1_router.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-animate/angular-animate.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-resource/angular-resource.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script type="text/javascript" src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+        <script type="text/javascript" src="/bower_components/ng-tags-input/ng-tags-input.js"></script>
+        <script type="text/javascript" src="/bower_components/moment/moment.js"></script>
+        <script type="text/javascript" src="/bower_components/toastr/toastr.js"></script>
 
         <!--Bootstrapping-->
-        <script src="/app/app.module.js"></script>
+        <script type="text/javascript" src="/app/app.module.js"></script>
+        <script type="text/javascript" src="/app/app.config.js"></script>
 
         <!--Modules-->
+        <script type="text/javascript" src="/app/navigation/navigation.component.js"></script>
+        <script type="text/javascript" src="/app/home/home.component.js"></script>
+        <script type="text/javascript" src="/app/movies/movies.component.js"></script>
         <!--Core-->
         <!--Layout-->        
         <!--Widgets-->
