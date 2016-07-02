@@ -1,6 +1,6 @@
 {
   "name": "vawn-stack-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "VAWN (Vis.js <-> Angular <-> Web API <-> Neo4j) Stack demo application",
   "authors": [
     "Christopher Redwine"
