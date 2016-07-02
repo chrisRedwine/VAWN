@@ -16,7 +16,7 @@
     "url": "https://github.com/chrisRedwine/VAWN/issues"
   },
   "devDependencies": {
-    "bower": "^1.7.7",
+    "angular-mocks": "^1.5.7",
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
@@ -26,10 +26,26 @@
     "protractor": "^3.2.2"
   },
   "dependencies": {
-    "@angular/router": "^0.2.0"
+    "angular": "^1.5.7",
+    "angular-animate": "^1.5.7",
+    "angular-loading-bar": "^0.9.0",
+    "angular-resource": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-sanitize": "^1.5.7",
+    "angular-spinkit": "^0.3.4",
+    "angular-touch": "^1.5.7",
+    "angular-ui-bootstrap": "^1.3.3",
+    "bootstrap": "^3.3.6",
+    "bootswatch": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "moment": "^2.13.0",
+    "ng-tags-input": "^3.1.1",
+    "ngcomponentrouter": "^2.1.0",
+    "please-wait": "^0.0.5",
+    "spinkit": "^1.2.5",
+    "toastr": "^2.1.2"
   },
   "scripts": {
-    "postinstall": "bower install",
     "prestart": "npm install",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
     "pretest": "npm install",

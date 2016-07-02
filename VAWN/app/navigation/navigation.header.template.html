@@ -1,4 +1,4 @@
-﻿<nav class="navbar navbar-default">
+﻿<nav role="navigation" class="navbar navbar-inverse navbar-static-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
@@ -7,9 +7,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <!--<a class="navbar-brand" href="#">
+                <span style="vertical-align: middle;"><img style="vertical-align: middle;" alt="VAWN Demo App" src="app/assets/images/network.png"></span>
+            </a>-->
             <a class="navbar-brand" href="#">
-                <!--<img alt="VAWN Demo App" src="/app/assets/images/network.png">-->
-                VAWN Demo App
+                <div class="brand">VAWN Demo App</div>
             </a>
         </div>
         <div class="collapse navbar-collapse" ng-class="{'in':!navCollapsed}">
@@ -20,13 +22,17 @@
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search" ng-model-options="$ctrl.searchOptions" ng-model="$ctrl.searchValue" ng-change="$ctrl.search($ctrl.searchValue)">
+                    <input type="text" class="form-control" placeholder="Search" ng-model-options="$ctrl.searchOptions" ng-model="$ctrl.searchValue" ng-change="">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default" ng-click="$ctrl.search($ctrl.searchValue)">Submit</button>
             </form>
-            <div class="nav navbar-nav navbar-right">
-                <a ng-href="https://github.com/chrisRedwine/VAWN.git">Github Repo</a>
-            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a ng-href="https://github.com/chrisRedwine/VAWN" title="Github Repo">
+                        <span class="fa fa-2x fa-github" ></span>
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

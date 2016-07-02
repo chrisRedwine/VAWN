@@ -504,6 +504,21 @@
             </summary>
             <returns>Response string "Default controller is up and running"</returns>
         </member>
+        <member name="P:VAWN.Models.MovieModel.Title">
+            <summary>
+            Title
+            </summary>
+        </member>
+        <member name="P:VAWN.Models.MovieModel.Tagline">
+            <summary>
+            Tagline
+            </summary>
+        </member>
+        <member name="P:VAWN.Models.MovieModel.Released">
+            <summary>
+            Released
+            </summary>
+        </member>
         <member name="P:VAWN.Models.DefaultModel.UserName">
             <summary>
             UserName

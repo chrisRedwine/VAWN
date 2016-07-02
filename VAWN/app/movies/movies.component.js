@@ -1,8 +1,7 @@
-﻿"use strict";
+﻿'use strict';
 
-angular.module('vawn')
-.component('movies', {
-    templateUrl: 'app/movies/movies.html',
+angular.module('vawn').component('movies', {
+    templateUrl: 'app/movies/movies.template.html',
     controller: function ($http) {
         var ctrl = this;
 

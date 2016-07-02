@@ -157,18 +157,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.config.js" />
-    <Content Include="app\app.html" />
+    <Content Include="app\app.component.js" />
+    <Content Include="app\app.template.html" />
+    <Content Include="app\assets\images\background.jpg" />
     <Content Include="app\assets\images\blank.png" />
     <Content Include="app\assets\scripts\wait.js" />
     <Content Include="app\assets\styles\app.css" />
-    <Content Include="app\assets\styles\bootswatch.paper.min.css" />
     <Content Include="app\home\home.component.js" />
-    <Content Include="app\home\home.html" />
+    <Content Include="app\home\home.template.html" />
     <Content Include="app\movies\movies.component.js" />
-    <Content Include="app\navigation\navigation.component.js" />
-    <Content Include="app\navigation\navigation.html" />
-    <Content Include="app\movies\movies.html" />
+    <Content Include="app\navigation\navigation.header.component.js" />
+    <Content Include="app\navigation\navigation.footer.component.js" />
+    <Content Include="app\navigation\navigation.header.template.html" />
+    <Content Include="app\navigation\navigation.footer.template.html" />
+    <Content Include="app\movies\movies.template.html" />
     <Content Include="app\services\mock\relationship_types.json" />
     <Content Include="App_data\XmlDocument.xml" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
@@ -227,9 +229,7 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="bin\VAWN.dll.config" />
     <Content Include="Models\README.md" />
-    <Content Include=".bowerrc" />
     <Content Include=".jshintrc" />
-    <Content Include="bower.json" />
     <Content Include="package.json" />
     <Content Include="Cql\GetMovieByTitle.cql" />
     <None Include="Web.Debug.config">
@@ -242,7 +242,6 @@
   <ItemGroup>
     <Content Include="app\app.module.js" />
     <Content Include="app\assets\images\network.png" />
-    <Content Include="app\assets\styles\ngplus.css" />
     <Content Include="index.html" />
     <Content Include="e2e-tests\protractor.conf.js" />
     <Content Include="e2e-tests\scenarios.js" />
@@ -284,12 +283,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
-    <Compile Include="Controllers\GraphController.cs" />
     <Compile Include="Controllers\MovieController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\QueryConfigModel.cs" />
     <Compile Include="Models\MovieModel.cs" />
     <Compile Include="Models\DefaultModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
